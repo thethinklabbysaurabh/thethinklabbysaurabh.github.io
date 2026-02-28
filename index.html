@@ -8,15 +8,16 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f1b34;
-            color: white;
-            text-align: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #ffffff;
+            color: #1e293b;
         }
 
         header {
+            background: linear-gradient(to right, #2563eb, #3b82f6);
+            color: white;
             padding: 100px 20px;
-            background: linear-gradient(to right, #00c6ff, #0072ff);
+            text-align: center;
         }
 
         h1 {
@@ -27,6 +28,7 @@
         h2 {
             font-size: 32px;
             margin-bottom: 20px;
+            color: #1e40af;
         }
 
         p {
@@ -37,47 +39,61 @@
         }
 
         section {
-            padding: 70px 20px;
+            padding: 80px 20px;
+            text-align: center;
         }
 
-        .dark-section {
-            background: #162447;
+        .light-blue {
+            background: #f1f5ff;
         }
 
         .button {
-            padding: 12px 25px;
+            padding: 12px 28px;
             margin: 10px;
             border: none;
-            border-radius: 6px;
+            border-radius: 8px;
             font-size: 16px;
             cursor: pointer;
             color: white;
+            transition: 0.3s;
         }
 
         .youtube {
-            background: #ff0000;
+            background: #2563eb;
         }
 
         .linkedin {
-            background: #0077b5;
+            background: #1d4ed8;
+        }
+
+        .button:hover {
+            opacity: 0.85;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            font-size: 18px;
+        }
+
+        li {
+            margin: 10px 0;
         }
 
         footer {
-            padding: 40px 20px;
-            background: #0d1528;
+            background: #e0e7ff;
+            padding: 60px 20px;
+            text-align: center;
         }
 
         a {
             text-decoration: none;
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 8px 0;
+        .tagline {
+            font-size: 20px;
+            margin-top: 20px;
+            opacity: 0.95;
         }
     </style>
 </head>
@@ -86,15 +102,15 @@
 
 <header>
     <h1>The ThinkLab by Saurabh</h1>
-    <p>AI • Data Engineering • Research • Career Growth</p>
+    <p class="tagline">AI • Research • Engineering • Career Growth</p>
 
     <div style="margin-top:30px;">
         <a href="https://youtube.com/@thethinklabbysaurabh" target="_blank">
-            <button class="button youtube">🎥 Visit YouTube Channel</button>
+            <button class="button youtube">Visit YouTube Channel</button>
         </a>
 
         <a href="https://linkedin.com/in/saurabh-ranjan-54b68474" target="_blank">
-            <button class="button linkedin">💼 Connect on LinkedIn</button>
+            <button class="button linkedin">Connect on LinkedIn</button>
         </a>
     </div>
 </header>
@@ -103,28 +119,21 @@
 <section>
     <h2>🚀 About The ThinkLab</h2>
     <p>
-        The ThinkLab is an AI innovation and education initiative designed to simplify 
-        complex AI concepts and create structured, research-driven AI career pathways.
+        The ThinkLab is an AI innovation and education initiative focused on simplifying 
+        complex AI systems and building structured, research-driven career pathways 
+        in Artificial Intelligence and Data Engineering.
     </p>
-
-    <ul>
-        <li>✔ Simplify complex AI concepts</li>
-        <li>✔ Structured AI/ML roadmaps</li>
-        <li>✔ Advanced webinars (Agentic AI, CV, LLMs)</li>
-        <li>✔ Premium infographics & technical content</li>
-        <li>✔ Research-oriented AI community</li>
-    </ul>
 </section>
 
 
-<section class="dark-section">
+<section class="light-blue">
     <h2>🔬 Future Technology Focus</h2>
     <ul>
-        <li>• 3D Computer Vision</li>
-        <li>• Autonomous Systems</li>
-        <li>• Open-Source LLMs</li>
-        <li>• AI Agents</li>
-        <li>• Research-driven AI Development</li>
+        <li>3D Computer Vision</li>
+        <li>Autonomous Systems</li>
+        <li>Open-Source LLMs</li>
+        <li>AI Agents</li>
+        <li>Research-driven AI Development</li>
     </ul>
 </section>
 
@@ -132,49 +141,46 @@
 <section>
     <h2>🎓 Academic & Research Focus</h2>
     <ul>
-        <li>✔ Advanced Deep Learning Architectures</li>
-        <li>✔ Object Detection (YOLO Evolution)</li>
-        <li>✔ 2D vs 3D Detection Systems</li>
-        <li>✔ LLM Architecture & Fine-Tuning</li>
-        <li>✔ Agentic AI Systems</li>
-        <li>✔ AI System Design for Industry</li>
+        <li>Advanced Deep Learning Architectures</li>
+        <li>YOLO Evolution & Object Detection</li>
+        <li>2D vs 3D Detection Systems</li>
+        <li>LLM Architecture & Fine-Tuning</li>
+        <li>Agentic AI Systems</li>
+        <li>AI System Design for Industry</li>
     </ul>
-
-    <p style="margin-top:25px;">
-        Advancing research-driven AI innovation with strong industry and academic integration.
-    </p>
 </section>
 
 
-<section class="dark-section">
+<section class="light-blue">
     <h2>📺 Content & Community</h2>
     <ul>
-        <li>✔ AI/ML Roadmaps (2026 Edition)</li>
-        <li>✔ Career Transition Guides</li>
-        <li>✔ PhD Guidance in Data Science</li>
-        <li>✔ Open-Source LLM Breakdowns</li>
-        <li>✔ Premium Infographic Learning Content</li>
+        <li>AI/ML Roadmaps (2026 Edition)</li>
+        <li>Career Transition Guides</li>
+        <li>PhD Guidance in Data Science</li>
+        <li>Open-Source LLM Breakdowns</li>
+        <li>Premium Infographic Learning Content</li>
     </ul>
 
-    <h3 style="margin-top:30px;">🌟 Content Philosophy</h3>
-    <p>🎯 Practical | 📚 Research-backed | ⚙ Industry-oriented | 🚀 Future-ready</p>
+    <p style="margin-top:30px;">
+        Practical • Research-backed • Industry-oriented • Future-ready
+    </p>
 </section>
 
 
 <section>
     <h2>🏆 What Makes The ThinkLab Different?</h2>
     <ul>
-        <li>✔ Industry + Academia Experience</li>
-        <li>✔ Real-world Data Engineering Exposure</li>
-        <li>✔ Research-Oriented Teaching</li>
-        <li>✔ Structured AI Career Frameworks</li>
-        <li>✔ Visual Learning (Premium Infographics)</li>
+        <li>Industry + Academia Experience</li>
+        <li>Real-world Data Engineering Exposure</li>
+        <li>Research-Oriented Teaching</li>
+        <li>Structured AI Career Frameworks</li>
+        <li>Visual Learning through Premium Infographics</li>
     </ul>
 
-    <h3 style="margin-top:30px;">
-        We don’t just teach AI.<br>
+    <p style="margin-top:30px; font-weight:600;">
+        We don’t just teach AI.  
         We build AI systems — and teach how they are built.
-    </h3>
+    </p>
 </section>
 
 
@@ -182,25 +188,25 @@
     <h2>📩 Contact</h2>
 
     <p>
-        📧 <a href="mailto:thethinklabbysaurabh@gmail.com" style="color:#00c6ff;">
+        📧 <a href="mailto:thethinklabbysaurabh@gmail.com" style="color:#2563eb;">
         thethinklabbysaurabh@gmail.com
         </a>
     </p>
 
     <p>
-        🔗 <a href="https://linkedin.com/in/saurabh-ranjan-54b68474" target="_blank" style="color:#00c6ff;">
+        🔗 <a href="https://linkedin.com/in/saurabh-ranjan-54b68474" target="_blank" style="color:#2563eb;">
         LinkedIn Profile
         </a>
     </p>
 
     <p>
-        ▶ <a href="https://youtube.com/@thethinklabbysaurabh" target="_blank" style="color:#00c6ff;">
+        ▶ <a href="https://youtube.com/@thethinklabbysaurabh" target="_blank" style="color:#2563eb;">
         YouTube Channel
         </a>
     </p>
 
-    <p style="margin-top:20px;">
-        © 2026 The ThinkLab by Saurabh | Built for Future AI Leaders 🚀
+    <p style="margin-top:20px; color:#475569;">
+        © 2026 The ThinkLab by Saurabh | Building Future AI Leaders
     </p>
 </footer>
 
