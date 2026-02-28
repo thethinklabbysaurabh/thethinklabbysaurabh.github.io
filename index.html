@@ -1,158 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>The ThinkLab by Saurabh</title>
     <meta charset="UTF-8">
+    <title>The ThinkLab by Saurabh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #ffffff;
-            color: #1e293b;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, #ffffff, #e6f2ff);
+            color: #0a1f44;
         }
 
         header {
-            background: linear-gradient(to right, #2563eb, #3b82f6);
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
 
-        h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
+        .profile-pic {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0077ff;
+            margin-right: 20px;
         }
 
-        h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: #1e40af;
+        .header-text h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #0077ff;
         }
 
-        p {
-            font-size: 18px;
-            line-height: 1.7;
-            max-width: 900px;
-            margin: auto;
+        .header-text p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            color: #555;
         }
 
         section {
-            padding: 80px 20px;
-            text-align: center;
+            padding: 40px;
+            max-width: 1100px;
+            margin: auto;
         }
 
-        .light-blue {
-            background: #f1f5ff;
-        }
-
-        .button {
-            padding: 12px 28px;
-            margin: 10px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
-            color: white;
-            transition: 0.3s;
-        }
-
-        .youtube {
-            background: #2563eb;
-        }
-
-        .linkedin {
-            background: #1d4ed8;
-        }
-
-        .button:hover {
-            opacity: 0.85;
+        h2 {
+            color: #0077ff;
+            margin-bottom: 15px;
         }
 
         ul {
-            list-style: none;
-            padding: 0;
-            font-size: 18px;
+            line-height: 1.8;
         }
 
-        li {
-            margin: 10px 0;
+        .highlight {
+            font-weight: bold;
+            color: #0056cc;
         }
 
-        footer {
-            background: #e0e7ff;
-            padding: 60px 20px;
-            text-align: center;
+        .contact {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
 
         a {
+            color: #0077ff;
             text-decoration: none;
+            font-weight: bold;
         }
 
-        .tagline {
-            font-size: 20px;
-            margin-top: 20px;
-            opacity: 0.95;
+        a:hover {
+            text-decoration: underline;
         }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background: #f5f9ff;
+            font-size: 14px;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .profile-pic {
+                margin-bottom: 10px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+
     </style>
 </head>
 
 <body>
 
 <header>
-    <h1>The ThinkLab by Saurabh</h1>
-    <p class="tagline">AI • Research • Engineering • Career Growth</p>
-
-    <div style="margin-top:30px;">
-        <a href="https://youtube.com/@thethinklabbysaurabh" target="_blank">
-            <button class="button youtube">Visit YouTube Channel</button>
-        </a>
-
-        <a href="https://linkedin.com/in/saurabh-ranjan-54b68474" target="_blank">
-            <button class="button linkedin">Connect on LinkedIn</button>
-        </a>
+    <img src="saurabh.jpg.jpg" alt="Saurabh Ranjan" class="profile-pic">
+    <div class="header-text">
+        <h1>The ThinkLab by Saurabh</h1>
+        <p>AI Innovation | Research | Education</p>
     </div>
 </header>
 
-
 <section>
     <h2>🚀 About The ThinkLab</h2>
-    <p>
-        The ThinkLab is an AI innovation and education initiative focused on simplifying 
-        complex AI systems and building structured, research-driven career pathways 
-        in Artificial Intelligence and Data Engineering.
-    </p>
-</section>
+    <p>The ThinkLab is an AI innovation and education initiative focused on simplifying complex AI concepts and building structured career pathways in Artificial Intelligence.</p>
 
-
-<section class="light-blue">
-    <h2>🔬 Future Technology Focus</h2>
     <ul>
-        <li>3D Computer Vision</li>
-        <li>Autonomous Systems</li>
-        <li>Open-Source LLMs</li>
-        <li>AI Agents</li>
-        <li>Research-driven AI Development</li>
+        <li>✔ Simplify complex AI concepts</li>
+        <li>✔ Provide structured AI/ML roadmaps</li>
+        <li>✔ Conduct advanced webinars (Agentic AI, CV, LLMs)</li>
+        <li>✔ Create premium infographic learning content</li>
+        <li>✔ Build research-oriented AI community</li>
     </ul>
 </section>
-
 
 <section>
     <h2>🎓 Academic & Research Focus</h2>
     <ul>
         <li>Advanced Deep Learning Architectures</li>
-        <li>YOLO Evolution & Object Detection</li>
+        <li>Object Detection (YOLO Evolution)</li>
         <li>2D vs 3D Detection Systems</li>
-        <li>LLM Architecture & Fine-Tuning</li>
+        <li>LLM Architecture & Fine-tuning</li>
         <li>Agentic AI Systems</li>
         <li>AI System Design for Industry</li>
     </ul>
 </section>
 
-
-<section class="light-blue">
+<section>
     <h2>📺 Content & Community</h2>
+    <p>Through The ThinkLab YouTube Channel, I share:</p>
+
     <ul>
         <li>AI/ML Roadmaps (2026 Edition)</li>
         <li>Career Transition Guides</li>
@@ -161,53 +153,30 @@
         <li>Premium Infographic Learning Content</li>
     </ul>
 
-    <p style="margin-top:30px;">
-        Practical • Research-backed • Industry-oriented • Future-ready
+    <p class="highlight">
+        We don’t just teach AI. We build AI systems and teach how they are built.
     </p>
 </section>
 
+<section class="contact">
+    <h2>📩 Contact</h2>
+    <p>Email: <a href="mailto:thethinklabbysaurabh@gmail.com">thethinklabbysaurabh@gmail.com</a></p>
 
-<section>
-    <h2>🏆 What Makes The ThinkLab Different?</h2>
-    <ul>
-        <li>Industry + Academia Experience</li>
-        <li>Real-world Data Engineering Exposure</li>
-        <li>Research-Oriented Teaching</li>
-        <li>Structured AI Career Frameworks</li>
-        <li>Visual Learning through Premium Infographics</li>
-    </ul>
+    <p>LinkedIn: 
+        <a href="https://www.linkedin.com/in/saurabh-ranjan-54b68474" target="_blank">
+        linkedin.com/in/saurabh-ranjan-54b68474
+        </a>
+    </p>
 
-    <p style="margin-top:30px; font-weight:600;">
-        We don’t just teach AI.  
-        We build AI systems and teach how they are built.
+    <p>YouTube: 
+        <a href="https://youtube.com/@thethinklabbysaurabh" target="_blank">
+        The ThinkLab YouTube Channel
+        </a>
     </p>
 </section>
-
 
 <footer>
-    <h2>📩 Contact</h2>
-
-    <p>
-        📧 <a href="mailto:thethinklabbysaurabh@gmail.com" style="color:#2563eb;">
-        thethinklabbysaurabh@gmail.com
-        </a>
-    </p>
-
-    <p>
-        🔗 <a href="https://linkedin.com/in/saurabh-ranjan-54b68474" target="_blank" style="color:#2563eb;">
-        LinkedIn Profile
-        </a>
-    </p>
-
-    <p>
-        ▶ <a href="https://youtube.com/@thethinklabbysaurabh" target="_blank" style="color:#2563eb;">
-        YouTube Channel
-        </a>
-    </p>
-
-    <p style="margin-top:20px; color:#475569;">
-        © 2026 The ThinkLab by Saurabh | Building Future AI Leaders
-    </p>
+    © 2026 The ThinkLab by Saurabh | Built with GitHub Pages
 </footer>
 
 </body>
